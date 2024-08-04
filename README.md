@@ -22,13 +22,21 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 This project is built with the following technologies:
 
 Next.js - A React framework for production.
+
 MongoDB - A NoSQL database.
+
 Mongoose - An ODM (Object Data Modeling) library for MongoDB and Node.js.
+
 React - A JavaScript library for building user interfaces.
+
 Tailwind CSS - A utility-first CSS framework.
+
 TypeScript - A typed superset of JavaScript.
+
 ESLint - A tool for identifying and fixing problems in JavaScript code.
+
 Prettier - An opinionated code formatter.
+
 PostCSS - A tool for transforming CSS with JavaScript.
 
 ## Learn More
