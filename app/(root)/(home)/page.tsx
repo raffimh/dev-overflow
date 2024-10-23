@@ -14,10 +14,11 @@ import type { Metadata } from 'next';
 import { auth } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
-  title: 'Home | Dev Overflow',
+  title: 'Home | Dev Overflow'
 }
 
-export default async function Home({ searchParams }: SearchParamsProps) {
+export default async function Home(props: SearchParamsProps) {
+  const searchParams = await props.searchParams;
   const { userId } = auth();
 
   let result;
@@ -42,7 +43,7 @@ export default async function Home({ searchParams }: SearchParamsProps) {
       page: searchParams.page ? +searchParams.page : 1,
     }); 
   }
-  
+
 
   return (
     <>

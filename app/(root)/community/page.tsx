@@ -9,10 +9,11 @@ import Link from 'next/link'
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Community | Dev Overflow',
+  title: 'Community | Dev Overflow'
 }
 
-const Page = async ({ searchParams }: SearchParamsProps) => {
+const Page = async (props: SearchParamsProps) => {
+  const searchParams = await props.searchParams;
   const result = await getAllUsers({
     searchQuery: searchParams.q,
     filter: searchParams.filter,

@@ -19,7 +19,7 @@ const SheetPortal = ({
   ...props
 }: SheetPrimitive.DialogPortalProps) => (
   // @ts-expect-error
-  <SheetPrimitive.Portal className={cn(className)} {...props} />
+  (<SheetPrimitive.Portal className={cn(className)} {...props} />)
 )
 SheetPortal.displayName = SheetPrimitive.Portal.displayName
 

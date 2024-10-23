@@ -4,7 +4,8 @@ import { getUserById } from '@/lib/actions/user.action';
 import { ParamsProps } from '@/types';
 import { auth } from '@clerk/nextjs'
 
-const Page = async ({ params }: ParamsProps) => {
+const Page = async (props: ParamsProps) => {
+  const params = await props.params;
   const { userId } = auth();
 
   if(!userId) return null;
